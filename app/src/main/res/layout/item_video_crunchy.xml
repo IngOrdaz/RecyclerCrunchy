@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivVideoThumbnail"
+        android:layout_width="170dp"
+        android:layout_height="270dp"
+        android:background="@color/translucent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="20dp"
+        />
+    <View
+        android:id="@+id/vVideoData"
+        android:layout_width="170dp"
+        android:layout_height="90dp"
+        android:background="@color/cold_grey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivVideoThumbnail"
+        android:layout_marginHorizontal="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="Example of a title"
+        app:layout_constraintTop_toBottomOf="@+id/ivVideoThumbnail"
+        app:layout_constraintLeft_toLeftOf="@id/vVideoData"
+        android:textColor="@color/white"
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvKind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Example"
+        app:layout_constraintLeft_toLeftOf="@id/vVideoData"
+        app:layout_constraintBottom_toBottomOf="@id/vVideoData"
+        android:textColor="@color/teal_200"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:id="@+id/tvLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Example"
+        app:layout_constraintLeft_toRightOf="@id/tvKind"
+        app:layout_constraintBottom_toBottomOf="@id/vVideoData"
+        android:textColor="@color/white"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:maxLines="1"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
